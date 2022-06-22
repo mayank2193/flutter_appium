@@ -10,7 +10,7 @@ driver = Remote('http://:@beta-hub.lambdatest.com/wd/hub/', dict(
     automationName='flutter',
     platformVersion='12',
     deviceName='Pixel 6 Pro',
-    app='lt://APP100202361655877669430228',
+    app='lt://',
     isRealMobile=True
 ))
 
