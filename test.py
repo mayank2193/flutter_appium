@@ -11,7 +11,8 @@ driver = Remote('http://:@beta-hub.lambdatest.com/wd/hub/', dict(
     platformVersion='12',
     deviceName='Pixel 6 Pro',
     app='lt://',
-    isRealMobile=True
+    isRealMobile=True,
+    w3c=True
 ))
 
 finder = FlutterFinder()
