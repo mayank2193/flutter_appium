@@ -10,16 +10,17 @@ driver = Remote('http://:@beta-hub.lambdatest.com/wd/hub/', dict(
     automationName='flutter',
     platformVersion='12',
     deviceName='Pixel 6 Pro',
-    app='lt://',
+    app='lt://APP100202361655877669430228',
     isRealMobile=True,
-    w3c=True
+    w3c=True,
+    devicelog=True
 ))
 
 finder = FlutterFinder()
 
-text_finder = finder.by_text('You have pushed the button this many times:')
-text_element = FlutterElement(driver, text_finder)
-print(text_element.text)
+#text_finder = finder.by_text('You have pushed the button this many times:')
+# text_element = FlutterElement(driver, text_finder)
+# print(text_element.text)
 
 key_finder = finder.by_value_key("next_route_key")
 goto_next_route_element = FlutterElement(driver, key_finder)
@@ -39,3 +40,4 @@ floating_button_element.click()
 counter_finder = finder.by_value_key("counter")
 counter_element = FlutterElement(driver, counter_finder)
 print(counter_element.text)
+driver.quit()
