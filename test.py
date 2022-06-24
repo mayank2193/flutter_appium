@@ -14,7 +14,9 @@ driver = Remote('http://:@beta-hub.lambdatest.com/wd/hub/', dict(
     app='lt://APP100202361655877669430228',
     isRealMobile=True,
     w3c=True,
-    devicelog=True
+    devicelog=True,
+    build='Flutter-Demo-Build',
+    name='Flutter-test'
 ))
 
 finder = FlutterFinder()
